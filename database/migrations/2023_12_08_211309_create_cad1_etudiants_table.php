@@ -14,15 +14,14 @@ return new class extends Migration
         Schema::create('cad1_etudiants', function (Blueprint $table) {
             $table->id();
             $table->string('nom', 45);
-            $table->string('adresse', 150);
-            $table->string('telephone', 25);
-            $table->string('email', 60)->unique();
-            $table->string('date_naissance', 20);
+            $table->text('adresse');
+            $table->string('phone', 20);
+            $table->string('email', 45);
+            $table->string('date_naissance', 12);
             $table->unsignedBigInteger('ville_id');
             $table->foreign('ville_id')->references('id')->on('cad1_villes');
-
+            
             $table->timestamps();
-
         });
     }
 

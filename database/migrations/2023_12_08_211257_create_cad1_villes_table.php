@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('cad1_villes', function (Blueprint $table) {
             $table->id();
+            $table->string('ville', 45);
             $table->timestamps();
         });
     }

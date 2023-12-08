@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Cad1EtudiantController;
+use App\Http\Controllers\Cad1VilleController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('etudiants', [Cad1EtudiantController::class, 'index']);
+Route::get('villes', [Cad1VilleController::class, 'index']);
