@@ -1,0 +1,7 @@
+
+.home{
+    
+    & h1{
+        font-size: var(--fontHuger);
+    }
+}

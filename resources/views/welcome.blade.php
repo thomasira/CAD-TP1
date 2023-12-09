@@ -1,8 +1,8 @@
 @extends('layouts.layout')
 @section('title', 'Accueil')
 @section('content')
-<div class="row">
-    <h2>Forum</h2>
+<div class="home" data-js-forum>
+    <h1>Forum</h1>
     <div>
         
     </div>

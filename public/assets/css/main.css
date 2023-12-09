@@ -1,4 +1,8 @@
 @import url(./config/variables.css);
 @import url(./config/reset.css);
+@import url(./config/body-template.css);
 
+@import url(./font/font.css);
 @import url(./layout/general.css);
+
+@import url(./app/home.css);

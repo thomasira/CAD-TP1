@@ -1,24 +1,21 @@
 /* inter */
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Inter:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap');
 
 :root{
 
     /* Palette de couleurs */
     --colorLight: #c1c6ca;
-    --colorLightAlt: #e7dfce;
+    --colorLightAlt: #adb1b5;
     --colorDark: #090b0a;
 
-    
     --colorMaisD: #1e417b;
     --colorMais: #107bbf;
     --colorMaisL: #8fd5dd;
-
 
     --colorError: #aa2828;
 
     /* Police */
     --typeText: 'Inter', sans-serif;
-    --typeCursive: 'Gloria Hallelujah', cursive;
 
     /* Taille de polices */
     --fontxxs: clamp(12px, 1.5vw, 14px);

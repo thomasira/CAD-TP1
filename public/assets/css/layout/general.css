@@ -1,7 +1,4 @@
 
 body{
-
-    &>*{
-        font-family: var(--typeText);
-    }
+    background-color: var(--colorLight);
 }
