@@ -10,14 +10,12 @@
     <title>Forum | @yield('title')</title>
 </head>
 <body>
-    <div>
-        @if(session('success'))
-        <dialog>
-            <button autofocus>Close</button>
-            <p>This modal dialog has a groovy backdrop!</p>
-        </dialog>
-        @endif
-        @yield('content')
-    </div>
+    @if(session('success'))
+    <dialog>
+        <button autofocus>Close</button>
+        <p>This modal dialog has a groovy backdrop!</p>
+    </dialog>
+    @endif
+    @yield('content')
 </body>
 </html>

@@ -1,7 +1,22 @@
 
 .home{
-    
-    & h1{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+
+    &>div{
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: var(--fontHuger);
+        display: flex;
+    }
+    & span{
+        display: block;
+    }
+    & .typed-cursor{
         font-size: var(--fontHuger);
     }
 }
+

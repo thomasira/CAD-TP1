@@ -2,9 +2,10 @@
 @section('title', 'Accueil')
 @section('content')
 <div class="home" data-js-forum>
-    <h1>Forum</h1>
-    <div>
-        
+
+    <div data-js-type>
+        <!-- string is defined and animated in JS -->
     </div>
+    
 </div>
 @endsection

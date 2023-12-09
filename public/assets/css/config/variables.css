@@ -27,7 +27,7 @@
     --fontxl: clamp(38px, 6vw, 54px);
     --fontxxl: clamp(50px, 7.5vw, 66px);
     --fontHuge: clamp(60px, 9.25vw, 96px);
-    --fontHuger: clamp(72px, 11.5vw, 120px);
+    --fontHuger: clamp(96px, 20vw, 200px);
 
     /* Taille de police statique*/
     --fontSText: 16px;
