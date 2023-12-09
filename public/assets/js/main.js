@@ -1,6 +1,5 @@
-import anime from "./anime.js";
+import anime from "./animejs/anime.js";
 import Typed from "./typed/typed.js";
-
 
 var typed = new Typed('[data-js-type]', {
     strings: ["Forum"],
@@ -12,7 +11,7 @@ var typed = new Typed('[data-js-type]', {
             const endEvent = new Event('endType');
             document.dispatchEvent(endEvent);
         }, 1200);
-     },
+     }, 
 });
 
 document.addEventListener('endType', () => {
@@ -26,8 +25,10 @@ document.addEventListener('endType', () => {
     anime({
         targets: elLetters,
         translateY: 1000,
-        delay: function() { return anime.random(0, 800); },
-        duration: function() { return anime.random(5000, 10000); },
-        rotate: function() { return anime.random(-360, 360); },
+        delay: function() { return anime.random(0, 1000); },
+        duration: function() { return anime.random(4000, 8000); },
+        rotate: function() { return anime.random(-220, 220); },
+        easing: 'easeOutExpo',
+        complete: function() { elType.remove(); elCursor.remove(); }
     });
 });
