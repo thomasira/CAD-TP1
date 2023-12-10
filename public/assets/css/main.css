@@ -6,3 +6,5 @@
 @import url(./layout/general.css);
 
 @import url(./app/home.css);
+
+@import url(./states/hidden.css);

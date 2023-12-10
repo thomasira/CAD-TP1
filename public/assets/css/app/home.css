@@ -2,6 +2,7 @@
 .home{
     flex: 1;
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     overflow-y: hidden;
@@ -12,11 +13,35 @@
         font-size: var(--fontHuger);
         display: flex;
     }
-    & span{
+    &>span{
         display: block;
     }
-    & .typed-cursor{
+    &>.typed-cursor{
         font-size: var(--fontHuger);
+    }
+
+    & main{
+        display: flex;
+        align-items: start;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        opacity: 1;
+        pointer-events: all;
+        color: var(--colorMaisD);
+        transition: opacity 2s ease-in;
+
+        & section{
+            display: flex;
+            flex-flow: row wrap;
+            padding: var(--gapxl);
+            gap: var(--gapl);
+
+            & header{
+                max-height: max-content;
+                width: 0 0 var(--homeType);
+            }
+        }
     }
 }
 

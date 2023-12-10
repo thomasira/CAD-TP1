@@ -46,4 +46,8 @@
     --gapxxl: clamp(48px, 8vw, 96px);
     --gapHuge: clamp(84px, 10vw, 120px);
 
+    /* misc. */
+
+    --homeType: clamp(300px, 60vw, 1000px);
+    --borderStd: 1px solid var(--colorLight);
 }
