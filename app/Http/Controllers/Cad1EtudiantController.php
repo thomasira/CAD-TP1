@@ -12,8 +12,8 @@ class Cad1EtudiantController extends Controller
      */
     public function index()
     {
-        $etudiants = Cad1Etudiant::all();
-        return $etudiants;
+        $etudiants = Cad1Etudiant::select()->paginate(15);
+        return view('accueil.index', compact('etudiants'));
     }
 
     /**
@@ -37,7 +37,8 @@ class Cad1EtudiantController extends Controller
      */
     public function show(Cad1Etudiant $cad1Etudiant)
     {
-        //
+        $etudiant = $cad1Etudiant;
+        return view('etudiant.show', compact('etudiant'));
     }
 
     /**
@@ -45,7 +46,8 @@ class Cad1EtudiantController extends Controller
      */
     public function edit(Cad1Etudiant $cad1Etudiant)
     {
-        //
+        $etudiant = $cad1Etudiant;
+        return view('etudiant.edit', compact('etudiant'));
     }
 
     /**

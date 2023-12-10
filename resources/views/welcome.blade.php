@@ -1,7 +1,8 @@
 @extends('layouts.layout')
-@section('title', 'Accueil')
+@section('title', 'Entrez')
 @section('content')
 <div class="home" data-js-forum>
+    
     <div data-js-type="1">
         <!-- string is defined and animated in JS -->
     </div>
@@ -14,7 +15,7 @@
                 </div>
             </header>
             <div>
-                <a href="" class="btn">Entrez</a>
+                <a href="{{ route('accueil')}}" class="btn">Entrez</a>
                 <a href="" class="btn"></a>
             </div>
 
