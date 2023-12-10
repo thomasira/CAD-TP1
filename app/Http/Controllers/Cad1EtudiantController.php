@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cad1Etudiant;
+use App\Models\Cad1Ville;
 use Illuminate\Http\Request;
 
 class Cad1EtudiantController extends Controller
@@ -21,7 +22,8 @@ class Cad1EtudiantController extends Controller
      */
     public function create()
     {
-        //
+        $villes = Cad1Ville::all();
+        return view('etudiant.create', compact('villes'));
     }
 
     /**
@@ -29,7 +31,14 @@ class Cad1EtudiantController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nom' => 'min:3 | max:45',
+            'email' => 'required | email | max:45 | unique:cad1_etudiants',
+            'phone' => 'max:20',
+            'date_naissance' => 'max:12'
+        ]);
+        
+        return $request;
     }
 
     /**

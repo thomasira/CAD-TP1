@@ -20,6 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('accueil', [Cad1EtudiantController::class, 'index'])->name('accueil');
+Route::get('etudiant-create', [Cad1EtudiantController::class, 'create'])->name('etudiant.create');
+Route::post('etudiant-create', [Cad1EtudiantController::class, 'store']);
 Route::get('etudiant/{cad1Etudiant}', [Cad1EtudiantController::class, 'show'])->name('etudiant.show');
 Route::get('etudiant-edit/{cad1Etudiant}', [Cad1EtudiantController::class, 'edit'])->name('etudiant.edit');
 Route::put('etudiant-edit/{cad1Etudiant}', [Cad1EtudiantController::class, 'update'])->name('etudiant.update');
