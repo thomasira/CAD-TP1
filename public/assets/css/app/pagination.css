@@ -1,0 +1,32 @@
+[role="navigation"]{
+    
+    &>div:first-of-type{
+        display: flex;
+        gap: var(--gaps);
+
+        span{
+            display: none;
+        }
+
+        a{
+            background-color: var(--colorMaisL);
+            padding: var(--gapxs);
+            max-width: max-content;
+            font-size: var(--fontText);
+            font-family: var(--typeText);
+            padding: var(--gapxxs);
+            border: 1px solid var(--colorMaisD);
+            background: none;
+            color: var(--colorMaisD);
+        
+            &:hover{
+                cursor: pointer;
+                border-color: var(--colorMaisDD);
+                color: var(--colorMaisDD);
+            }
+        }
+    }
+    >div:last-of-type{
+        display: none;
+    }
+}

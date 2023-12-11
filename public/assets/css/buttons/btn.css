@@ -1,14 +1,30 @@
 
 .btn{
     max-width: max-content;
-    background-color: var(--colorMais);
-    font-size: var(--fontxs);
-    font-weight: 600;
+    font-size: var(--fontText);
     font-family: var(--typeText);
-    padding: var(--gapxs);
-    border:1px solid var(--colorDark);
+    padding: var(--gapxxs);
+    border: 1px solid var(--colorMaisD);
+    color: var(--colorMaisD);
+    transition: background-color .4s;
+    background: none;
+    text-align: center;
 
     &:hover{
         cursor: pointer;
+        border-color: var(--colorMaisDD);
+        color: var(--colorMaisDD);
+        background-color: var(--colorLightAlt);
+        transition: background-color .4s;
+    }
+
+    &.danger{
+        color: var(--colorError);
+        border-color: var(--colorError);
+
+        &:hover{
+            border-color: var(--colorErrorD);
+            color: var(--colorErrorD);
+        }
     }
 }

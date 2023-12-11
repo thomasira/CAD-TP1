@@ -2,16 +2,42 @@
 .formulaire{
     display: flex;
     flex-flow: row wrap;
+    gap: var(--gapm);
+    align-items: start;
 
-    >div, form{
+    >section{
         flex: 1;
         min-width: 300px;
+
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: var(--gapxs);
+            border-bottom: 1px solid var(--colorDark);
+            padding: var(--gaps) 0;
+
+            p{
+                font-size: var(--fontxxs);
+                text-align: right;
+            }
+        }
+    }
+    >section:last-of-type{
+        background-color: var(--colorLightL);
+        padding: var(--gaps);
     }
 
     form{
         display: flex;
         flex-flow: column;
-        gap: var(--gapxs);
+        gap: var(--gapl);
+
+        div{
+            display: flex;
+            flex-flow: column;
+            gap: var(--gapxs);
+        }
     
         label{
             display: flex;

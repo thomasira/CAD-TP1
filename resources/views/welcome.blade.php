@@ -1,5 +1,5 @@
 @extends('layouts.layout')
-@section('title', 'Entrez')
+@section('title', 'Accueil')
 @section('content')
 <div class="home" data-js-forum>
     
@@ -10,17 +10,17 @@
     <main data-js-main class="hidden">
         <section>
             <header>
+                <h1 class="logo">Forum_</h1>
+            </header>
                 <div data-js-type="2">
                     <!-- string is defined and animated in JS -->
                 </div>
-            </header>
+        </section>
+        <section>
             <div>
-                <a href="{{ route('accueil')}}" class="btn">Entrez</a>
-                <a href="" class="btn"></a>
+                <a href="{{ route('etudiant.index')}}" class="btn">Entrez</a>
             </div>
-
         </section>
     </main>
-
 </div>
 @endsection

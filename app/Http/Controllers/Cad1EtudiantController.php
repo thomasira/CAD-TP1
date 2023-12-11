@@ -14,7 +14,7 @@ class Cad1EtudiantController extends Controller
     public function index()
     {
         $etudiants = Cad1Etudiant::select()->paginate(15);
-        return view('accueil.index', compact('etudiants'));
+        return view('etudiant.index', compact('etudiants'));
     }
 
     /**
@@ -22,8 +22,10 @@ class Cad1EtudiantController extends Controller
      */
     public function create()
     {
+        $nextId = Cad1Etudiant::max('id') + 1;
+        $date = date('Y-m-d');
         $villes = Cad1Ville::all();
-        return view('etudiant.create', compact('villes'));
+        return view('etudiant.create', compact('villes', 'nextId', 'date'));
     }
 
     /**
@@ -63,8 +65,9 @@ class Cad1EtudiantController extends Controller
     public function edit(Cad1Etudiant $cad1Etudiant)
     {
         $villes = Cad1Ville::all();
+        $createdAt = date_format($cad1Etudiant->created_at, 'Y-m-d');
         $etudiant = $cad1Etudiant;
-        return view('etudiant.edit', compact('etudiant', 'villes'));
+        return view('etudiant.edit', compact('etudiant', 'villes', 'createdAt'));
     }
 
     /**
@@ -95,6 +98,6 @@ class Cad1EtudiantController extends Controller
     public function destroy(Cad1Etudiant $cad1Etudiant)
     {
         $cad1Etudiant->delete();
-        return redirect(route('accueil'))->withSuccess('article supprimé!');
+        return redirect(route('etudiant.index'))->withSuccess('article supprimé!');
     }
 }

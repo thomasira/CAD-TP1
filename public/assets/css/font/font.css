@@ -1,4 +1,25 @@
 
 body{
     font-family: var(--typeText);
+    font-size: var(--fontText);
+}
+input, select{
+    font-size: var(--fontText);
+}
+
+h1, h2, h3, h4{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+h1{
+    font-size: var(--fontl);
+}
+h2{
+    font-size: var(--fontm);
+}
+h3{
+    font-size: var(--fontxs);
+}
+h4{
+    font-size: var(--fontText);
 }

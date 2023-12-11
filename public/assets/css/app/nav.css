@@ -1,0 +1,40 @@
+
+.nav{
+    display: flex;
+    padding: var(--gaps) var(--gapxl);
+    align-items: center;
+    gap: var(--gapm);
+    justify-content: space-between;
+
+    >div{
+        display: flex;
+        flex-flow: row;
+        gap: var(--gaps);
+
+        div{
+            padding: var(--gaps);
+            
+            a{
+                text-transform: uppercase;
+                transition: color .4s;
+                
+            }
+            span{
+                display: block;
+                height: 2px;
+                width: 0;
+                background-color: var(--colorMaisD);
+                transition: width .4s;
+            }
+            &:hover{
+
+                a{
+                    color: var(--colorMaisD);
+                }
+                span{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

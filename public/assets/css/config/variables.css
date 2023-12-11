@@ -4,15 +4,18 @@
 :root{
 
     /* Palette de couleurs */
+    --colorLightL: #d2d8dc;
     --colorLight: #c1c6ca;
     --colorLightAlt: #adb1b5;
-    --colorDark: #090b0a;
+    --colorDark: #0c0d0f;
 
     --colorMaisD: #1e417b;
+    --colorMaisDD: #0d1e39;
     --colorMais: #107bbf;
     --colorMaisL: #8fd5dd;
 
     --colorError: #aa2828;
+    --colorErrorD:#3e0f0f;
 
     /* Police */
     --typeText: 'Inter', sans-serif;
@@ -48,6 +51,6 @@
 
     /* misc. */
 
-    --homeType: clamp(300px, 60vw, 1000px);
+    --homeType: clamp(340px, 60vw, 500px);
     --borderStd: 1px solid var(--colorDark);
 }

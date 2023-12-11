@@ -1,7 +1,30 @@
 
 body{
     background-color: var(--colorLight);
+    color: var(--colorDark);
 }
 main{
     padding: var(--gapxl);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    section{
+        display: flex;
+        flex-flow: column;
+        gap: var(--gapm);
+        width: 100%;
+    }
+}
+header{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: var(--gapm);
+    justify-content: space-between;
+
+    & h1{
+        text-transform: uppercase;
+        font-weight: 400;
+    }
 }
