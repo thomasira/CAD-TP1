@@ -37,7 +37,8 @@ class Cad1EtudiantController extends Controller
             'nom' => 'min:3 | max:45',
             'email' => 'required | email | max:45 | unique:cad1_etudiants',
             'phone' => 'min:7 | max:20',
-            'date_naissance' => 'max:12 | date_format:Y-m-d'
+            'date_naissance' => 'max:12 | date_format:Y-m-d',
+            'adresse' => 'min:10'
         ]);
         $etudiant = Cad1Etudiant::create([
             'nom' => $request->nom,

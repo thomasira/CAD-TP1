@@ -44,6 +44,9 @@
                 </label>
                 <label>Adresse
                     <input type="text" name="adresse" value="{{ old('adresse') }}">
+                    @if ($errors->has('adresse'))
+                        <span class="error">{{ $errors->first('adresse') }}</span>
+                    @endif
                 </label>
                 <label>Ville
                     <select name="ville_id">

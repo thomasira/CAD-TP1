@@ -41,7 +41,7 @@ export default class{
                 complete: function() { elType1.remove(); elCursor.remove(); }
             });
             new Typed('[data-js-type="2"]', {
-                strings: ["En informatique, un forum est un espace de discussion publique (ou au moins ouvert à plusieurs participants). Les discussions y sont archivées ce qui permet une communication asynchrone (c'est ce qui différencie les forums de la messagerie instantanée). Il y a deux sortes de forum, en fonction du classement des messages : soit les « forums de discussion » dont les messages sont classés par date chronologique, soit les « forums de questions / réponses » dont les messages sont classés par votes. Forum est un terme d'origine latine (popularisé par l'anglais) désignant une place de la ville consacrée à la discussion et au commerce."],
+                strings: ["n.m. Lieu où l'on discute les affaires publiques ; place où avaient lieu les assemblées du peuple, dans l'Antiquité romaine. Lieu virtuel permettant une réunion, un discussion ouverte à propos d'un sujet particulier ; service permettant l'échange et la discussion sur un thème donné. Service permettant discussions et échanges sur un thème donné : chaque utilisateur peut lire à tout moment les interventions de tous les autres et apporter sa propre contribution sous forme d'articles.Par extension, on désigne également par ce terme les systèmes de discussion télématiques, qui offrent généralement un service de téléchargement (connus en anglais sous le nom de,).(date de la publication : 01/09/2000 - éd. commission de l'informatique et des composants électroniques) *langue-francaise TV-5*"],
                 showCursor: false,
                 typeSpeed: 30,
             });
