@@ -29,13 +29,8 @@
                 outline: 1px solid var(--colorDark);
             }
         }
-
         select{
             max-width: max-content;
-
-            option{
-                padding: var(--gapTHxxs);
-            }
         }
     }
     
