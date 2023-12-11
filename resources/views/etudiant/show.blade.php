@@ -1,7 +1,6 @@
 @extends('layouts.layout')
 @section('title', 'Etudiant')
 @section('content')
-
 @include('layouts.nav')
 <main class="etudiant-file">
     <section>

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thomas Aucoin-Lo">
     <meta name="description" content="projet scolaire de forum étudiant implémentant l'architecture laravel et la création de base de données dynamique.">
-    <script src="{{ asset('assets/js/main.js') }}" type="module"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
+    <script src="{{ asset('assets/js/main.js') }}" type="module"></script>
     <title>Forum | @yield('title')</title>
 </head>
 <body>
+    <div class="cover"></div>
     @if(session('success'))
     <dialog open>
         <div>

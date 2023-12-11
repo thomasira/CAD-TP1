@@ -26,6 +26,7 @@
         margin-top: var(--gapHuge);
         display: flex;
         flex-flow: row wrap;
+        gap: var(--gapHuge);
         position: absolute;
         opacity: 1;
         pointer-events: all;

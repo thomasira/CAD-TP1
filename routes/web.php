@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () { return view('welcome'); })->name('accueil');
 Route::get('info', function () { return view('info'); })->name('info');
+
 Route::get('etudiant-index', [Cad1EtudiantController::class, 'index'])->name('etudiant.index');
 Route::get('etudiant-create', [Cad1EtudiantController::class, 'create'])->name('etudiant.create');
 Route::post('etudiant-create', [Cad1EtudiantController::class, 'store']);

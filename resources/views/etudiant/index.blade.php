@@ -1,7 +1,6 @@
 @extends('layouts.layout')
 @section('title', 'Étudiants')
 @section('content')
-
 @include('layouts.nav')
 <main>
     <section>

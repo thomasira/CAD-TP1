@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @section('title', 'Info')
-@include('layouts.nav')
 @section('content')
+@include('layouts.nav')
 <div>
     <main>
         <h1>Info</h1>
