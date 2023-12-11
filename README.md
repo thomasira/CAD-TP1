@@ -1,8 +1,6 @@
 
 # FORUM_
 
-## Index
-
 ## Liens
 
 >* Github: *https://github.com/thomasIRA/CAD-TP1*  
