@@ -7,7 +7,7 @@
     --colorLightL: #d2d8dc;
     --colorLight: #c1c6ca;
     --colorLightAlt: #adb1b5;
-    --colorDark: #0c0d0f;
+    --colorDark: #010108;
 
     --colorMaisD: #1e417b;
     --colorMaisDD: #0d1e39;
@@ -34,7 +34,7 @@
     --fontxl: clamp(38px, 6vw, 54px);
     --fontxxl: clamp(50px, 7.5vw, 66px);
     --fontHuge: clamp(60px, 9.25vw, 96px);
-    --fontHuger: clamp(96px, 20vw, 200px);
+    --fontHuger: clamp(84px, 20vw, 200px);
 
     /* Taille de police statique*/
     --fontSText: 16px;
