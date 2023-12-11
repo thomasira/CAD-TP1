@@ -6,5 +6,9 @@
 @import url(./layout/general.css);
 
 @import url(./app/home.css);
+@import url(./app/formulaire.css);
 
 @import url(./states/hidden.css);
+@import url(./states/error.css);
+
+@import url(./buttons/btn.css);

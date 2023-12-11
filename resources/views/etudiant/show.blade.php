@@ -12,8 +12,12 @@
         <p>{{ $etudiant->etudiantHasVille->ville }}</p>
     </section>
     <div>
-        <a href="{{ route('etudiant.edit', $etudiant->id) }}">Modifier</a>
-        <a href="">Supprimer</a>
+        <a href="{{ route('etudiant.edit', $etudiant->id) }}" class="btn">Modifier</a>
+        <form method="post">
+            @method('delete')
+            @csrf
+            <button class="btn danger">Supprimer</button>
+        </form>
     </div>
 </main>
 

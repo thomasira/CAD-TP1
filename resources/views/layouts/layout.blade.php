@@ -11,6 +11,7 @@
 </head>
 <body>
     @if(session('success'))
+    {{ session('success') }}
     <dialog>
         <button autofocus>Close</button>
         <p>This modal dialog has a groovy backdrop!</p>

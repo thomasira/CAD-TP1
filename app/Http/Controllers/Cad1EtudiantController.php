@@ -34,11 +34,18 @@ class Cad1EtudiantController extends Controller
         $request->validate([
             'nom' => 'min:3 | max:45',
             'email' => 'required | email | max:45 | unique:cad1_etudiants',
-            'phone' => 'max:20',
-            'date_naissance' => 'max:12'
+            'phone' => 'min:7 | max:20',
+            'date_naissance' => 'max:12 | date_format:Y-m-d'
         ]);
-        
-        return $request;
+        $etudiant = Cad1Etudiant::create([
+            'nom' => $request->nom,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'adresse' => $request->adresse,
+            'date_naissance' => $request->date_naissance,
+            'ville_id' => $request->ville_id
+        ]); 
+        return redirect(route('etudiant.show', $etudiant))->withSuccess('étudiant créé!');
     }
 
     /**
@@ -55,8 +62,9 @@ class Cad1EtudiantController extends Controller
      */
     public function edit(Cad1Etudiant $cad1Etudiant)
     {
+        $villes = Cad1Ville::all();
         $etudiant = $cad1Etudiant;
-        return view('etudiant.edit', compact('etudiant'));
+        return view('etudiant.edit', compact('etudiant', 'villes'));
     }
 
     /**
@@ -64,7 +72,21 @@ class Cad1EtudiantController extends Controller
      */
     public function update(Request $request, Cad1Etudiant $cad1Etudiant)
     {
-        //
+        $request->validate([
+            'nom' => 'min:3 | max:45',
+            'email' => 'required | email | max:45 ',
+            'phone' => 'min:7 | max:20',
+            'date_naissance' => 'max:12 | date_format:Y-m-d'
+        ]);
+        $cad1Etudiant->update([
+            'nom' => $request->nom,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'adresse' => $request->adresse,
+            'date_naissance' => $request->date_naissance,
+            'ville_id' => $request->ville_id
+        ]);
+        return redirect(route('etudiant.show', $cad1Etudiant))->withSuccess('étudiant mis a jour!');
     }
 
     /**
@@ -72,6 +94,7 @@ class Cad1EtudiantController extends Controller
      */
     public function destroy(Cad1Etudiant $cad1Etudiant)
     {
-        //
+        $cad1Etudiant->delete();
+        return redirect(route('accueil'))->withSuccess('article supprimé!');
     }
 }

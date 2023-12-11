@@ -6,6 +6,7 @@
 <main>
     <section>
         <h1>Les étudiants</h1>
+        <a href="{{ route('etudiant.create') }}" class="btn">Ajoutez un étudiant</a>
         <table>
             <thead>
             <tr>

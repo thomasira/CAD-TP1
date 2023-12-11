@@ -2,3 +2,6 @@
 body{
     background-color: var(--colorLight);
 }
+main{
+    padding: var(--gapxl);
+}

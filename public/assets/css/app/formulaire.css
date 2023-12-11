@@ -1,0 +1,42 @@
+
+.formulaire{
+    display: flex;
+    flex-flow: row wrap;
+
+    >div, form{
+        flex: 1;
+        min-width: 300px;
+    }
+
+    form{
+        display: flex;
+        flex-flow: column;
+        gap: var(--gapxs);
+    
+        label{
+            display: flex;
+            flex-flow: column;
+            gap: var(--gapxxs);
+        }
+    
+        input, select{
+            padding: var(--gapxxs);
+            font-family: var(--typeText);
+            border: none;
+            background-color: var(--colorLightAlt);
+
+            &:focus{
+                outline: 1px solid var(--colorDark);
+            }
+        }
+
+        select{
+            max-width: max-content;
+
+            option{
+                padding: var(--gapTHxxs);
+            }
+        }
+    }
+    
+}

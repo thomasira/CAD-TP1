@@ -49,5 +49,5 @@
     /* misc. */
 
     --homeType: clamp(300px, 60vw, 1000px);
-    --borderStd: 1px solid var(--colorLight);
+    --borderStd: 1px solid var(--colorDark);
 }

@@ -1,0 +1,14 @@
+
+.btn{
+    max-width: max-content;
+    background-color: var(--colorMais);
+    font-size: var(--fontxs);
+    font-weight: 600;
+    font-family: var(--typeText);
+    padding: var(--gapxs);
+    border:1px solid var(--colorDark);
+
+    &:hover{
+        cursor: pointer;
+    }
+}
