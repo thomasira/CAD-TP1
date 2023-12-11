@@ -1,7 +1,7 @@
 
 .nav{
     display: flex;
-    padding: var(--gaps) var(--gapxl);
+    padding: var(--gaps);
     align-items: center;
     gap: var(--gapm);
     justify-content: space-between;

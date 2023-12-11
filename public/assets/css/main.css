@@ -13,6 +13,7 @@
 @import url(./app/logo.css);
 @import url(./app/nav.css);
 @import url(./app/etudiant-file.css);
+@import url(./app/info.css);
 
 @import url(./states/hidden.css);
 @import url(./states/error.css);

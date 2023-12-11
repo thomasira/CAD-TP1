@@ -1,0 +1,37 @@
+
+.info{
+    gap: var(--gapl);
+
+    >div{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: var(--gapl);
+
+        &:first-of-type{
+            padding: 0 var(--gaps);
+            justify-content: space-between;
+            background-color: var(--colorLightAlt);
+        }
+        section{
+            min-width: 300px;
+        }
+        section:first-of-type{
+            flex: 2;
+        }
+        section:last-of-type{
+            flex: 1;
+        }
+    }
+
+    a{
+        max-width: 12ch;
+        text-align: right;
+        color: var(--colorMaisD);
+
+        &:hover{
+            color: var(--colorMaisDD);
+        }
+    }
+}

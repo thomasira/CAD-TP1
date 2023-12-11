@@ -4,7 +4,8 @@ body{
     color: var(--colorDark);
 }
 main{
-    padding: var(--gapxl);
+    flex: 1;
+    padding: var(--gapl);
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -26,5 +27,31 @@ header{
     & h1{
         text-transform: uppercase;
         font-weight: 400;
+    }
+}
+footer{
+    max-width: none;
+    background-color: var(--colorDark);
+    color: var(--colorLight);
+
+    >div{
+        max-width: 1400px;
+        margin: auto;
+        display: flex;
+        flex-flow: row;
+        gap: var(--gapm);
+        justify-content: space-between;
+        padding: var(--gapTHxxs);
+        font-size: var(--fontxxs);
+    
+        div{
+            display: flex;
+            flex-flow: column;
+            gap: var(--gapTHxxs);
+    
+            &:last-of-type{
+                text-align: right;
+            }
+        }
     }
 }

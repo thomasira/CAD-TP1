@@ -13,7 +13,7 @@ class Cad1EtudiantController extends Controller
      */
     public function index()
     {
-        $etudiants = Cad1Etudiant::select()->paginate(15);
+        $etudiants = Cad1Etudiant::select()->paginate(20);
         return view('etudiant.index', compact('etudiants'));
     }
 
@@ -98,6 +98,6 @@ class Cad1EtudiantController extends Controller
     public function destroy(Cad1Etudiant $cad1Etudiant)
     {
         $cad1Etudiant->delete();
-        return redirect(route('etudiant.index'))->withSuccess('article supprimé!');
+        return redirect(route('etudiant.index'))->withSuccess('étudiant supprimé!');
     }
 }

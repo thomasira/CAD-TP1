@@ -31,7 +31,7 @@ table{
     }
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 900px){
     table{
         & td:not(:first-of-type, :nth-of-type(2)), th:not(:first-of-type, :nth-of-type(2), :nth-of-type(3)){
             display:none

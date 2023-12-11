@@ -38,5 +38,5 @@
         </table>
     </section>
 </main>
-
+@include('layouts.footer')
 @endsection
