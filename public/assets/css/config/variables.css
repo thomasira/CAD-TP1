@@ -16,6 +16,10 @@
 
     --colorError: #aa2828;
     --colorErrorD:#3e0f0f;
+    --colorSuccess: #14531c;
+
+    --colorLightT: #d2d8dcee;
+
 
     /* Police */
     --typeText: 'Inter', sans-serif;

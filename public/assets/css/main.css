@@ -4,6 +4,7 @@
 
 @import url(./font/font.css);
 @import url(./layout/general.css);
+@import url(./layout/dialog.css);
 
 @import url(./app/home.css);
 @import url(./app/formulaire.css);

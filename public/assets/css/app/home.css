@@ -34,12 +34,10 @@
 
         & section{
             flex: 1;
+            min-width: 300px;
 
             &:first-of-type{
                 width: var(--homeType);
-            }
-            &:last-of-type{
-
             }
         }
     }

@@ -1,0 +1,18 @@
+
+dialog{
+    position: relative;
+    border: none;
+    background-color: var(--colorLightT);
+    padding: var(--gapl);
+    
+    div{
+        display: flex; 
+        flex-flow: row;
+        align-items: center;
+        gap: var(--gapl);
+    }
+    p{
+        text-transform: uppercase;
+        color: var(--colorMaisD);
+    }
+}

@@ -18,7 +18,7 @@
         </section>
         <section>
             <div>
-                <a href="{{ route('etudiant.index')}}" class="btn">Entrez</a>
+                <a href="{{ route('etudiant.index')}}" class="btn large">Entrez</a>
             </div>
         </section>
     </main>

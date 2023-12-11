@@ -11,10 +11,13 @@
 </head>
 <body>
     @if(session('success'))
-    {{ session('success') }}
-    <dialog>
-        <button autofocus>Close</button>
-        <p>This modal dialog has a groovy backdrop!</p>
+    <dialog open>
+        <div>
+            <p>{{ session('success') }}</p>
+            <form method="dialog">
+                <button class="btn exit danger">x</button>
+            </form>
+        </div>
     </dialog>
     @endif
     @yield('content')
